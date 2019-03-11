@@ -1,0 +1,3 @@
+Use commands:
+virtualenv venv
+. venv/bin/activate

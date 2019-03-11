@@ -1,0 +1,12 @@
+How to add an item:
+curl -X POST -d BIN=200 -d Project=YER http://localhost:1337/posts
+	
+	Order does not matter for the parameters.
+
+To edit a praticular item in Strapi must take the ID:
+
+How to delete an item in Strapi:
+curl -X DELETE http://localhost:1337/posts/5c250ae1bb07d17a8bfaca02
+
+How to update an item in Strapi:
+curl -X PUT http://localhost:1337/posts/5c250da4bb07d17a8bfaca03 -d BIN=700 -d Project=YERO

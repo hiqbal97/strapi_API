@@ -1,0 +1,12 @@
+To create new project in Strapi:
+strapi new my-project
+cd my-project
+strapi start
+
+To open existing project cd into the project and start:
+cd my-project
+strapi start
+
+Username: Hammad
+Email: hammad97@live.com
+Password: hammad

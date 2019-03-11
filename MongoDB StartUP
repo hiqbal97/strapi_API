@@ -1,0 +1,24 @@
+Create the configuration file for MongoDB
+sudo nano /etc/systemd/system/mongodb.service
+
+Add the following content to the file:
+[Unit]
+Description=High-performance, schema-free document-oriented database
+After=network.target
+ 
+[Service]
+User=mongodb
+ExecStart=/usr/bin/mongod --quiet --config /etc/mongod.conf
+ 
+[Install]
+WantedBy=multi-user.target
+
+Run the mongod service:
+sudo systemctl start mongodb
+sudo systemctl status mongodb
+
+Make the service permanent:
+sudo systemctl enable mongodb
+
+
+
